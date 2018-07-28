@@ -6,7 +6,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./work:/home/jovyan/work/
-      - . /c/Users/iot/Git/docker-compose
+            #- ./work:/home/iot/work/
+      - ./c/Users/iot/Git/docker-compose
     command: start-notebook.sh --NotebookApp.token=''
 
