@@ -1,0 +1,12 @@
+version: '1'
+services:
+  jupyter-tutorial:
+    image: jupyter/base-notebook
+    container_name: jupyter-notebook
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./work:/home/jovyan/work/
+      - . /c/Users/iot/Git/docker-compose
+    command: start-notebook.sh --NotebookApp.token=''
+
